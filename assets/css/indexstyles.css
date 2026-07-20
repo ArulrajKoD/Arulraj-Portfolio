@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section-title {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+/* ---------------------------------------- */
+
+/* Header */
+
+header {
+    background-color: white;
+    z-index: 10000;
+}
+
+.navbar h1 a {
+    color: rgb(0, 140, 255);
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+
+header .navbar {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    color: gray;
+}
+
+.navbar a:hover {
+    transition-duration: 0.2s;
+    color: rgb(0, 140, 255);
+}
+
+
+/* -------------------------------------------------- */
+
+/* Hero Section */
+
+.hero {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 5px;
+    color: white;
+    background: linear-gradient(135deg, #4b3e9a 0%, #9280ca 100%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px 10px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.hero-content span {
+    color: rgb(255, 183, 0);
+}
+
+.hero-content p {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: grid;
+    gap: 10px;
+}
+
+.hero-btn button {
+    padding: 15px 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.hero-btn button:hover {
+    transition-duration: 0.2s;
+    background-color: white;
+    color: black;
+}
+
+.hero-img {
+    display: flex;
+    place-content: center;
+    margin: 25px 0;
+}
+
+.hero-img img {
+    border-radius: 50%;
+    width: 80%;
+    border: 10px solid #4b3f8d;
+    box-shadow: 1px 1px 15px black;
+}
+
+
+/* -------------------------------------------------- */
+
+/* About Section */
+
+.about {
+    padding: 50px 0;
+}
+
+.about-content {
+    display: grid;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: gray;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.about-content p span {
+    font-weight: bold;
+}
+
+.about .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    color: white;
+}
+
+.about .cards p {
+    color: white;
+}
+
+.about .card {
+    width: 150px;
+    padding: 0 10px;
+    height: 200px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #4b3f8d;
+    box-shadow: 1px 1px 15px black;
+}
+
+.about .card:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0 0 0;
+}
+
+/* -------------------------------------------------- */
+
+/* S&T Section */
+
+.st .cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 300px;
+    place-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.st .card {
+    padding: 15px;
+    box-shadow: 1px 1px 15px black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.st .card i {
+    font-size: 48px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #4b3f8d;
+}
+
+.st .card h3 {
+    margin: 20px 0;
+}
+
+.st .card p {
+    line-height: 30px;
+}
+
+/* -------------------------------------------------- */
+
+/* Experience Section */
+
+.experience{
+    margin-top: 50px;
+}
+.experience .card {
+    box-shadow: 1px 1px 15px black;
+    margin: 25px 5px;
+    padding: 20px 5px;
+    border-radius: 15px;
+}
+
+.experience .card * {
+    margin: 10px;
+}
+.experience img{
+    display: none;
+}
+
+/* -------------------------------------------------- */
+
+/* Service Section */
+
+.service{
+    margin-top: 50px;
+}
+.service .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 25px 5px;
+}
+
+.service .card {
+    box-shadow: 1px 1px 15px black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+}
+
+.service i {
+    font-size: 48px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #4b3f8d;
+}
+
+/* -------------------------------------------------- */
+
+/* Blog Section */
+
+.blog .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 25px 5px;
+    gap: 25px;
+}
+
+.blog .card {
+    background-color: #4b3f8d;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px black;
+}
+
+.blog .blog-img {
+    font-size: 56px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.blog .blog-credits {
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 25px;
+}
+
+.blog .blog-credits * {
+    margin: 10px;
+}
+
+.blog button {
+    font-size: 18px;
+    border: none;
+    color: rgb(0, 140, 255);
+    background-color: white;
+}
+
+.blog button:hover {
+    transition-duration: 0.2s;
+    color: gray;
+}
+
+/* -------------------------------------------------- */
+
+/* GT Section */
+
+.gt{
+    margin-top: 50px;
+}
+.gt form {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    margin: 25px 5px;
+    padding: 25px 5px;
+}
+
+.gt form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.gt form input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.gt textarea {
+    height: 200px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.gt input[type="submit"] {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    color: #4b3f8d;
+    font-weight: 600;
+    box-shadow: 1px 1px 10px black;
+    cursor: pointer;
+    width: 350px;
+    margin: auto;
+}
+.gt input[type="submit"]:hover{
+    transition-duration: 0.2s;
+    box-shadow: 0 0 0;
+}
+
+.gt .prsnl-details {
+    display: grid;
+    gap: 25px;
+    margin: 10px 5px 25px;
+}
+
+.gt .prsnl-details .card {
+    padding: 25px 10px;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 15px;
+    display: flex;
+}
+
+.gt .img i {
+    font-size: 36px;
+    margin-right: 15px;
+    color: #4b3f8d;
+}
+
+.gt .social-links{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------------------------------------------------- */
+
+/* Footer */
+
+footer {
+    background-color: #4b3e9a;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+footer * {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* =================================================================
+                        Media Queries 
+================================================================= */
+
+/* Header */
+
+@media (min-width: 768px) {
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar h1 a {
+        border: none;
+    }
+
+    header .navbar {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* Hero section */
+
+@media (min-width: 768px) {
+
+    .hero {
+        display: flex;
+        height: 600px;
+        padding: 0 50px;
+    }
+    .hero-content{
+        width: 50%;
+    }
+    .hero-btn{
+        display: flex;
+    }
+    .hero-img{
+        width: 500px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* About section */
+
+@media (min-width: 768px) {
+
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-content:space-between;
+    }
+    .about .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* -------------------------------------------------- */
+
+/* S&T section */
+
+@media (min-width: 768px) {
+
+    .st {
+        margin: 0px 25px;
+    }
+    .st .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* Experience section */
+
+@media (min-width: 768px) {
+
+    .experience .cards{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .experience .card{
+        width: 500px;  
+        margin: 50px 50px;
+    }
+    .experience .card2{
+        display: flex;
+        justify-content: end;
+    }
+    .experience img{
+        display: block;
+        position: absolute;
+        height: 100vh;
+    }
+    .experience .line{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* -------------------------------------------------- */
+
+/* Service section */
+
+@media (min-width: 768px) {
+
+    .service .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 25px 30px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* Blog section */
+
+@media (min-width: 768px) {
+
+    .blog{
+        margin-top: 50px;
+    }
+    .blog .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 50px 30px;
+    }
+    .blog .blog-img{
+        font-size: 72px;
+    }
+
+}
+
+
+/* -------------------------------------------------- */
+
+/* GT section */
+
+@media (min-width: 768px) {
+
+    .gt{
+        margin-bottom: 50px;
+    }
+    .gt-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 50px;
+        margin: 50px 30px 15px;
+    }
+    .gt-content .prsnl-details{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .gt-content form{
+        padding: 15px;
+    }
+
+}
