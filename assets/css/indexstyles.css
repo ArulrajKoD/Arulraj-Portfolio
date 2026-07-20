@@ -141,7 +141,6 @@ header .navbar {
 .about-content {
     display: grid;
     padding: 30px;
-    justify-content: space-evenly;
     align-items: center;
 }
 
