@@ -132,7 +132,7 @@ header .navbar {
     border-radius: 50%;
     width: 80%;
     border: 10px solid #4b3f8d;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 
@@ -184,7 +184,7 @@ header .navbar {
     text-align: center;
     border-radius: 15px;
     background-color: #4b3f8d;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
 }
 
 .about .card:hover {
@@ -207,7 +207,7 @@ header .navbar {
 
 .st .card {
     padding: 15px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     background-color: white;
     height: 250px;
     display: flex;
@@ -257,13 +257,50 @@ header .navbar {
     padding: 20px 5px;
     background-color: white;
     border-radius: 15px;
+    position: relative;
 }
+.experience .cards{
+    position: relative;
+}
+.experience .timeline{
+    display: none;
+    margin: auto;
+}
+.experience .timeline::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #9280ca;
+    width: 2px;
+    height: 100%;
+    margin: 20px 0;
+}
+.experience .dot-parent{
+    display: grid;
+    justify-content: center;
+    margin-left: 2px;
+    position: relative;
+    width: 98.15%;
+}
+.experience .dot-parent .dot::after{
+    display: none;
+    content: "\f111";
+    font-weight: 900;
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 3px solid #4b3e9a;
+    font-family: "font awesome 7 free";
+    color: #4b3e9a;
+}
+
 .experience .card * {
     margin: 10px;
 }
-.experience img{
-    display: none;
-}
+
 
 /* -------------------------------------------------- */
 
@@ -408,7 +445,6 @@ header .navbar {
 }
 .gt input[type="submit"]:hover{
     transition-duration: 0.2s;
-    box-shadow: 0 0 0;
 }
 
 .gt .prsnl-details {
@@ -569,6 +605,12 @@ footer * {
     .experience .line{
         display: flex;
         justify-content: center;
+    }
+    .experience .timeline{
+        display: block;
+    }
+    .experience .dot-parent .dot::after{
+        display: block;
     }
 }
 
