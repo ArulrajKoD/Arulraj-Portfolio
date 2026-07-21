@@ -132,7 +132,7 @@ header .navbar {
     border-radius: 50%;
     width: 80%;
     border: 10px solid #4b3f8d;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 
@@ -184,7 +184,7 @@ header .navbar {
     text-align: center;
     border-radius: 15px;
     background-color: #4b3f8d;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .about .card:hover {
@@ -207,7 +207,7 @@ header .navbar {
 
 .st .card {
     padding: 15px;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     background-color: white;
     height: 250px;
     display: flex;
@@ -238,7 +238,7 @@ header .navbar {
     margin-top: 50px;
 }
 .experience .card {
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     margin: 25px 5px;
     padding: 20px 5px;
     background-color: white;
@@ -267,7 +267,7 @@ header .navbar {
 }
 
 .service .card {
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 15px;
     background-color: white;
     text-align: center;
@@ -295,7 +295,8 @@ header .navbar {
 .blog .card {
     background-color: #4b3f8d;
     border-radius: 15px;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
 }
 
 .blog .blog-img {
@@ -377,7 +378,7 @@ header .navbar {
     font-size: 16px;
     color: #4b3f8d;
     font-weight: 600;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     cursor: pointer;
     width: 350px;
     margin: auto;
@@ -395,7 +396,7 @@ header .navbar {
 
 .gt .prsnl-details .card {
     padding: 25px 10px;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 15px;
     background-color: white;
     display: flex;
