@@ -230,6 +230,20 @@ header .navbar {
     line-height: 30px;
 }
 
+.st .progress-bar{
+    width: 100%;
+    margin-top: 15px;
+    height: 10px;
+    background-color: gainsboro;
+    border-radius: 50px;
+}
+.st .card .progress-fill{
+    height: 10px;
+    width: 0;
+    border-radius: 50px;
+    background-color: #4b3f8d;
+}
+
 /* -------------------------------------------------- */
 
 /* Experience Section */
@@ -244,7 +258,6 @@ header .navbar {
     background-color: white;
     border-radius: 15px;
 }
-
 .experience .card * {
     margin: 10px;
 }
@@ -272,6 +285,12 @@ header .navbar {
     background-color: white;
     text-align: center;
     padding: 25px;
+}
+
+.service .icon{
+    height: 150px;
+    display: grid;
+    place-content: center;
 }
 
 .service i {
@@ -338,12 +357,16 @@ header .navbar {
 .gt{
     margin-top: 50px;
 }
-.gt form {
+.gt .gt-contact {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 15px;
-    margin: 25px 5px;
+    /* margin: 25px 5px; */
     padding: 25px 5px;
+}
+
+.gt-content form input[type="submit"]{
+    display: grid;
 }
 
 .gt form label {
